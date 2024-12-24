@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo-Bhai", sans-serif;
+}
+
+
+/* -------------------main tag------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+
+body {
+    background-color: black;
+}
+
+.main {
+    /* border: 2px solid blue; */
+    background-image: url("images/bg.jpg");
+    /*added the image of netflix background*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    /*By this we are setting the background image and here max(1200px,100vw means that it will take the maximum of its which will be)*/
+    height: 644px;
+    position: relative;
+    /*we have do this to make the .box to be move according to the main box*/
+}
+
+.main .box {
+    /* added this to make the background image of the main to look darker we can also do the filter using but image get opacity bu we need the black coloured opacity so added this box to the main */
+    height: 644px;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    /*used to give the low dark less opacity black color to background image*/
+    width: 100%;
+    opacity: .6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /*change to make the element of netflix logo and button to set at the end of its parent and tehre is space only between them*/
+    align-items: center;
+    width: 60vw;
+    margin: auto;
+    height: 100px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    /*to make image come out of its parents and look brighter due to in front*/
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", serif;
+    height: calc(100% - 100px);
+    /*now this will overcome of teh eror that the nav bar alredy taken 56px height and the .hero wants to take its parents 100% height so that it will coe to exeed the height and come out of the .main class so here we have use dthe cal() property to resolve this problem also spaxe is requred to calculation that is space for the operator*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /* border: 2px solid yellow; */
+    gap: 23px;
+    padding: 0 30px;
+}
+
+
+.hero> :nth-child(1) {
+    /*Bolder font to only first child and before the : gap is neccesory*/
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.seperation {
+    height: 5px;
+    background-color: rgb(65, 64, 64);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400ox;
+    background-color: rgba(255, 255, 255, 0.026);
+    color: white;
+    border: 1px solid rgb(124, 121, 121);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400px;
+}
+
+.btn-red-sm {
+    color: white;
+    background-color: red;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /*for transparent background*/
+}
+
+
+
+
+
+/* -----------------Section------------------------ */
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+
+.first .div {
+    display: flex;
+    padding: 34px 0px;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 19px;
+}
+
+.imgsec {
+    position: relative;
+    /* border: 2px solid yellow; */
+    margin: 6px 0;
+}
+
+.imgsec img {
+    width: 555px;
+    top: 2px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.imgsec video {
+    position: absolute;
+    width: 555px;
+    /*help to align the video with the tv image*/
+    top: 51px;
+    right: 0px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq .faqbox:hover {
+    background-color: #414141;
+    /*on hover changing color*/
+}
+
+.faq {
+    padding: 34px;
+    background-color: black;
+    color: white;
+}
+
+.faq .faqbox {
+    transition: all 1s ease-in-out;
+    /*used for the trasnsition efect*/
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+    padding: 21px;
+    max-width: 60vw;
+    margin: 22px auto 10px auto;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #2d2d2d;
+}
+
+.faq :nth-child(5) {
+    margin-bottom: 34px;
+}
+
+
+
+/* -------------------------Footer------------------------- */
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .helpline {
+    padding: 34px 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+
+
+/* ------------------Media queries------------------- */
+/* To mae it work we have pulled it dow at the last */
+@media screen and (max-width: 1300px) {
+
+    /* body{
+        background-color: red;
+        } */
+
+    nav {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .hero {
+        height: calc(100% - 100px);
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        padding: 34px 0px;
+    }
+
+    section.first > div :nth-child(1) {
+        font-size: 34px;
+        font-weight: bolder;
+    }
+
+    section.first > div :nth-child(2) {
+        font-size: 15px;
+    }
+    
+    .imgsec img {
+        width: 400px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .imgsec video {
+        position: absolute;
+        width: 300px;
+        top: 51px;
+        right: 61px;
+    }
+    .third .imgsec video {
+        position: absolute;
+        width: 300px;
+        top: 60px;
+        right: 61px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 35px;
+        column-gap:30px;
+    }
+
+    footer {
+        max-width: 80vw;
+        margin: auto;
+        padding: 14px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .faq .faqbox {
+        font-size: 18px;
+    }
+}
