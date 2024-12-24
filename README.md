@@ -1,4 +1,4 @@
-![Screenshot 2024-12-24 215551](https://github.com/user-attachments/assets/4181448a-8109-40fa-91f0-7e84da641516)![Screenshot 2024-12-24 215602](https://github.com/user-attachments/assets/b2f4cfe1-5722-4514-b5e7-14df54492e16)I have created the Netflix website which consist of its main page and some other stuff including dynamic videos and the images.
+I have created the Netflix website which consist of its main page and some other stuff including dynamic videos and the images.
 In this web page i have tried to clone the Netflix exactly and theier features too further in it i will add js to make it more responsive towards the user.
 Here are some images of it.
 ![Screenshot 2024-12-24 215551](https://github.com/user-attachments/assets/39578297-77ae-49ff-8cc5-5b625cc47389)
